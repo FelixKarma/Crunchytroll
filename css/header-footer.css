@@ -1,0 +1,177 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333;
+    width: 100%;
+    height: 168px;
+    border-bottom: 2px solid #94F9FF;
+}
+figure{
+    margin: 0px;
+}
+body{
+    overflow-x: hidden; 
+    margin: 0px;
+    border: 5px solid #94F9FF;
+}
+main{
+    background-color: #212121;
+    height: 100%;
+} 
+footer{
+    position: absolute;
+    background-color:#686868;
+    width: 100%;
+    bottom: 0%;
+}
+#logo1a {
+    position: absolute;
+    width: 85px;
+    height: 79px;
+    left: 1%;
+    top: 4%;
+}
+#logo1b{
+    position: absolute;
+    width: 346px;
+    height: 73px;
+    left: 115px;
+    top: 4%;
+}
+#logofig{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo2a {
+    width: 85px;
+    height: 79px;
+}
+#logo2b{
+    width: 346px;
+    height: 73px;
+}
+#bouttonaccueil1{
+    /* position: absolute;
+    top: 123px;
+    left: 456px; */
+    background: #4FACFE;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    height: 30px;
+    min-width: 185px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#bouttonaccueil1:hover{
+    background: #0071D5;
+    border-color: #FFFFFF;
+}
+#buttoncategoriebutton1{
+    /* position: absolute;
+    top: 123px;
+    left: 658px; */
+    background: #4FACFE;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    height: 30px;
+    min-width: 185px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#buttoncategoriebutton1:hover{
+    background: #0071D5;
+    border-color: #FFFFFF;
+}
+#buttonnouscontacterbutton1{
+    /* position: absolute;
+    top: 123px;
+    left: 860px; */
+    background: #4FACFE;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    height: 30px;
+    min-width: 185px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#buttonnouscontacterbutton1:hover{
+    background: #0071D5;
+    border-color: #FFFFFF;
+}
+#logoprofil1{
+    position: absolute;
+    height: 80px;
+    width: 76px;
+    right: 4%;
+    top: 4%
+}
+
+#headerflexbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}   
+#headerflexbox2{
+    display: flex;
+    justify-content: space-evenly;
+}
+#buttonfaq{
+    width: 223px;
+    height: 45px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background: #4FACFE;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#buttonfaq:hover{
+    background: #0071D5;
+    border-color: #FFFFFF;
+}
+#buttonmentionlegale{
+    width: 223px;
+    height: 45px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background: #4FACFE;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+#buttonmentionlegale:hover{
+    background: #0071D5;
+    border-color: #FFFFFF;
+}
+#footerflexbox{
+    display: flex;
+    flex-direction: column;
+}
+#insta{
+    width: 45px;
+    height: 45px;
+    margin-right: 200px;
+    margin-left: 50px;
+}
+#facebook{
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+}
+#logoresaux{
+    display: flex;
+    justify-content: space-between;
+}
+#iconeresaux{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
