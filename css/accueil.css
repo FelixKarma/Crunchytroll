@@ -25,6 +25,7 @@ body{
 }
 img{
     width: 200px;
+    
 }
 .accueiltendance1a{
     display: flex;
@@ -86,7 +87,7 @@ a{
 }
 #accueilvoirplus1a{
     position: absolute;
-    bottom: 260px;
+    bottom: 370px;
     right: 50px;
     color: #4facfe;
 }

@@ -11,17 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/crunchytroll-logo.png">
 </head>
 
 <body>
     <header>
+        <a href="Accueil.html">
         <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
-            <a href="Accueil.html">
                 <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
             </a>
         </figure>
         <div id="headerflexbox1">
-            <input type="search" placeholder="Recherche ..">
+            <div>
+                <input class="searchtext" type="search" id="search" value=""
+                    placeholder="Recherche manga...">
+            </div>
             <div id="headerflexbox2">
                 <a href="Accueil.html"><button id="bouttonaccueil1">Accueil</button></a>
                 <button id="buttoncategoriebutton1">Catégories</button>
@@ -33,7 +37,30 @@
         </figure>
     </header>
     <main>
-        <br><br>
+        <div>
+            <img src="" id="mangaimageaffiche" alt="">
+            <div id="mangabackgroundsynopsis"><p id="mangasynopsis"></p></div>
+            <div id="mangabackgroundtitre"><p id="mangatitre"></p></div>
+            <div id="manganotemoyenne">
+                <p id="manganote"></p>
+            </div>
+            
+            <div>
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    
+                </fieldset>
+            </div>
+        </div>
     </main>
     <footer id="logofig">
         <figure >
@@ -56,6 +83,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/api.js"></script>
+    <script src="../js/barrerecherche.js"></script>
 </body>
-
 </html>
