@@ -3,10 +3,12 @@ body{
     margin: 0px;
     border: 5px solid #94F9FF;
     background-color: #212121;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;    
 }
-header{
+header{ 
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #333333;
     width: 100%;
     height: 168px;
@@ -105,12 +107,10 @@ footer{
     background: #0071D5;
     border-color: #FFFFFF;
 }
-#logoprofil1{
-    position: absolute;
+#display{
+    display: flex;
     height: 80px;
     width: 76px;
-    right: 4%;
-    top: 4%
 }
 
 #headerflexbox1{
@@ -184,4 +184,27 @@ footer{
 #search{
     width: 500px;
     height: 25px;
+    margin-bottom: 25px;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    background-color: #4FACFE;
+    width: 223px;
+    height: 399px;
+    
+}
+#profilpicture{
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+}
+.taillephoto{
+    width: 35px;
+    height: 35px;
+}
+table{
+    margin-left: 5px;
 }
