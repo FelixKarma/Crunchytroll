@@ -62,15 +62,17 @@
     </header>
     <main>
         <div>
-            <img src="" id="mangaimageaffiche" alt="">
+            <div class="imgmanga1">
+                <img src="" id="mangaimageaffiche" alt="">
+            </div>
             <div id="mangabackgroundsynopsis"><p id="mangasynopsis"></p></div>
             <div id="mangabackgroundtitre"><p id="mangatitre"></p></div>
             <div id="manganotemoyenne">
                 <p id="manganote"></p>
-            </div>
+        </div>
             
-            <div>
-                <fieldset class="rating">
+        <div id="rating1">
+            <fieldset class="rating">
                     <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                     <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
                     <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
@@ -82,9 +84,60 @@
                     <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
                     <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                     
-                </fieldset>
-            </div>
+            </fieldset>
         </div>
+        <div class="container">
+            <div class="video-container">
+              <video controls>
+                <source src="../img/mangavid1.mp4" type="video/mp4">
+                Votre navigateur ne prend pas en charge la vidéo HTML5.
+              </video>
+              <div class="overlay">Cliquez pour regarder</div>
+            </div>
+          </div>
+        <div class="comment-form">
+            <textarea placeholder="Écrivez votre commentaire ici"></textarea>
+            <button type="submit">Ajouter un commentaire</button>
+          </div>
+          
+          <div class="comment-section">
+            <div class="comment">
+              <div class="author">Henry</div>
+              <div class="message">Mais c'est quoi ce poulet ?!</div>
+            </div>
+            <div class="comment">
+              <div class="author">Frédéric</div>
+              <div class="message">Trop vieux pour ces conneries...</div>
+            </div>
+            <div class="comment">
+                <div class="author">Aurélien</div>
+                <div class="message">Mon PC a redémarré en pleine video</div>
+            </div>
+            <div class="comment">
+                <div class="author">Gautier</div>
+                <div class="message">*afk*</div>
+            </div>
+            <div class="comment">
+                <div class="author">Czarinah</div>
+                <div class="message">La video ne se lance pas sur mon Mac</div>
+            </div>
+            <div class="comment">
+                <div class="author">Jérémy</div>
+                <div class="message">Frédo marque un point</div>
+            </div>
+            <div class="comment">
+                <div class="author">Aissam</div>
+                <div class="message">J'en veux pas de ton code tout pourrit !</div>
+            </div>
+            <div class="comment">
+                <div class="author">Romain</div>
+                <div class="message">Ça manque de photo de moi</div>
+            </div>
+            <div class="comment">
+                <div class="author">Riad</div>
+                <div class="message">Oh la dinguerie</div>
+            </div>
+          </div>
     </main>
     <footer id="logofig">
         <figure >
@@ -109,5 +162,15 @@
     </footer>
     <script src="../js/api.js"></script>
     <script src="../js/barrerecherche.js"></script>
+    <script>
+        var videoContainer = document.querySelector('.video-container');
+        var video = videoContainer.querySelector('video');
+        var overlay = videoContainer.querySelector('.overlay');
+    
+        overlay.addEventListener('click', function() {
+          video.play();
+          overlay.style.display = 'none';
+        });
+      </script>
 </body>
 </html>

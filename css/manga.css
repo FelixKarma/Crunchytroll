@@ -41,4 +41,133 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
+body{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+#mangaimageaffiche{  
+  width: 290px;
+  border: 3px solid #94F9FF;
+}
+.imgmanga1{
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 8%;
+}
+#mangabackgroundsynopsis{
+  color: #fff;
+  display: flex;
+  position: relative;
+  width: 800px;
+  justify-content: end;
+  align-content: center;
+  float: right;
+  margin-top : -21%;
+  margin-right: 8%;
+  border: 3px solid #94F9FF;
+  background-color: #3333;
+  padding: 20px;
+  border-radius: 20px;
+}
+#mangabackgroundtitre{
+  background-color: #4facfe;
+  border-radius: 15px;
+  width: 294px;
+  height: 25px;
+  margin-left: 8%;
+  margin-top: 15px;
+}
+#mangatitre {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+.rating{
+  margin-top : -13%;
+  margin-left: 58%;
+}
+#manganotemoyenne{
+  margin-left: 17.5%;
+}
+#manganote{
+  color: #4facfe;
+  font-weight: bold;
+  font-size: larger;
+}
+.comment-section {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.comment {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #94F9FF;
+  background-color: #333;
+  color: #fff;
+}
+.comment .author {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4facfe;
+}
+.comment .message {
+  font-size: 14px;
+}
+.comment-form {
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.comment-form textarea {
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+  font-size: 14px;
+}
+.comment-form button {
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 75px;
+  margin-top: 40px;
+}
 
+.video-container {
+  position: relative;
+  width: 640px;
+  height: 360px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
