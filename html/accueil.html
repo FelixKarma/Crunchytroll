@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/crunchytroll-logo.png">
     <title>Accueil</title>
 </head>
 <body>
     <header>
+        <a href="Accueil.html">
         <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
-            <a href="Accueil.html">
                 <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
             </a>
         </figure>
         <div id="headerflexbox1">
-            <input type="search" placeholder="Recherche ..">
+            <div id="barrerecherche">
+                <input class="searchtext" type="search" id="search" value=""
+                    placeholder="Recherche manga...">
+            </div>
             <div id="headerflexbox2">
                 <a href="accueil.html"><button id="bouttonaccueil1">Accueil</button></a>
                 <button id="buttoncategoriebutton1">Catégories</button>
@@ -26,54 +30,76 @@
             </div>
         </div>
         <figure>
-            <img src="../img/logoprofil.png" alt="bouton de profil" id="logoprofil1">
+            <img src="../img/logoprofil.png" alt="bouton de profil" id="display">
         </figure>
+        <div class="menu" id="menu">
+            <table>
+               <tr>
+                    <td><img src="../img/profil picture.jpg" id="profilpicture"></td>
+                    <td>Karmas</td>
+                </tr>
+                <tr>
+                    <td><a href="profil.html"> <img src="../img/Vector (1).png" class="taillephoto" alt=""> </a></td>
+                    <td><a href="profil.html">Mon profil</a></td>
+                </tr>
+                <tr>
+                    <td><img src="../img/Vector (2).png" class="taillephoto" alt=""></td>
+                    <td>Favoris</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/Vector (3).png" class="taillephoto" alt=""></td>
+                    <td>Parametre</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/ic_baseline-log-out.png" class="taillephoto" alt=""></td>
+                    <td>Déconnexion</td>
+                </tr>
+            </table>
+        </div>
     </header>
     <main>
         <div>
             <button id="accueiltendance1b">Les Tendances</button>
         </div>
         <div class="accueiltendance1a">
-            <a href="" class="accueiltendance1c">
-                <h4 class="accueiltitre1a">Shingeki no Kyojin</h4>
-                <img src="../img/snk1.png" alt="Shingeki no Kyojin" id="accueiltendancesnk1a" class="accueiltendance1d">
+            <a href="manga.html#oshi_no_ko" class="accueiltendance1c">
+                <h4 class="accueiltitre1a">Oshi no Ko</h4>
+                <img src="../img/afficheManga/oshinoko.png" alt="Oshi no Ko" id="accueiltendanceoshinoko1a" class="accueiltendance1d">
             </a>
-            <a href="" class="accueiltendance1c">
+            <a href="manga.html#demon_slayer" class="accueiltendance1c">
                 <h4 class="accueiltitre1a">Demon Slayer</h4>
-                <img src="../img/kny1.png" alt="Kimetsu no Yaiba" id="accueiltendancekny1a" class="accueiltendance1d">
+                <img src="../img/afficheManga/demonslayer.png" alt="Demon Slayer" id="accueiltendancedemonslayer1a" class="accueiltendance1d">
             </a>
-            <a href class="accueiltendance1c">
+            <a href="manga.html#one_piece" class="accueiltendance1c">
                 <h4 class="accueiltitre1a">One Piece</h4>
-                <img src="../img/op1.png" alt="One Piece" id="accueiltendanceop1" class="accueiltendance1d">
+                <img src="../img/afficheManga/Onepiece.png" alt="One Piece" id="accueiltendanceop1" class="accueiltendance1d">
             </a>
-            <a href class="accueiltendance1c">
+            <a href="manga.html#naruto" class="accueiltendance1c">
                 <h4 class="accueiltitre1a">Naruto</h4>
-                <img src="../img/naruto1.png" alt="Naruto" id="accueiltendancenaruto1" class="accueiltendance1d">
+                <img src="../img/afficheManga/NARUTO.png" alt="Naruto" id="accueiltendancenaruto1" class="accueiltendance1d">
             </a>
-            <a href="" id="accueilvoirplus1a">Voir plus</a>
         </div>
         <br><br><br>
         <div>
             <button id="accueilnouveauté1b">Les Nouveautés</button>
         </div>
         <div class="accueilnouveauté1a">
-            <a href="" class="accueilnouveauté1c">
+            <a href="manga.html#boku_no_hero_academia" class="accueilnouveauté1c">
                 <h4 class="accueiltitre1a">My Hero Academia</h4>
-                <img src="../img/mha1.png" alt="My Hero Academia" id="accueilnouveauté" class="accueilnouveauté1d">
+                <img src="../img/afficheManga/Boku no Hero Academia.png" alt="Boku no Hero Academia" id="accueilnouveauté1" class="accueilnouveauté1d">
             </a>
-            <a href="" class="accueilnouveauté1c">
-                <h4 class="accueiltitre1a">Jujutsu Kaisen</h4>
-                <img src="../img/jujutsu1.png" alt="" id="accueilnouveauté" class="accueilnouveauté1d">
+            <a href="manga.html#chainsaw_man" class="accueilnouveauté1c">
+                <h4 class="accueiltitre1a">Chainsaw Man</h4>
+                <img src="../img/afficheManga/Chainsaw Man.png" alt="Chainsaw Man" id="accueilnouveauté2" class="accueilnouveauté1d">
             </a>
-            <a href class="accueilnouveauté1c">
-                <h4 class="accueiltitre1a">JJBA</h4>
-                <img src="../img/jojo1.png" alt="Jojo" id="accueilnouveauté" class="accueilnouveauté1d">
+            <a href="manga.html#blue_lock"class="accueilnouveauté1c">
+                <h4 class="accueiltitre1a">Blue Lock</h4>
+                <img src="../img/afficheManga/Blue Lock.png" alt="Blue Lock" id="accueilnouveauté3" class="accueilnouveauté1d">
             </a>
-            <a href class="accueilnouveauté1c">
+            <a href="manga.html#bleach" class="accueilnouveauté1c">
                 <h4 class="accueiltitre1a">Bleach</h4>
-                <img src="../img/bleach1.png" alt="Bleach" id="accueilnouveauté" class="accueilnouveauté1d">
-            </a>
-            <a href="" id="accueilvoirplus1b">Voir plus</a>
+                <img src="../img/afficheManga/BLEACH.png" alt="Bleach" id="accueilnouveauté4" class="accueilnouveauté1d">
+                </a>
         </div>
     </main>
     <footer id="logofig">
@@ -97,5 +123,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/barrerecherche.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
