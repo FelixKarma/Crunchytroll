@@ -23,9 +23,11 @@ btnMonCompte.addEventListener("click", () => {
         monCompte.style.display = 'block';
         principal.style.display = 'none';
         parametres.style.display = 'none';
+        document.title.innerText = 'Mon Compte';
     } else {
         monCompte.style.display = 'none';
         principal.style.display = 'block';
+        document.title.innerText = 'Mon Profil';
     }
     
 })
@@ -35,9 +37,11 @@ btnParametre.addEventListener("click", () => {
         parametres.style.display = 'block';
         principal.style.display = 'none';
         monCompte.style.display = 'none';
+        document.title.innerText = 'Paramètres';
     } else {
         parametres.style.display = 'none';
         principal.style.display = 'block';
+        document.title.innerText = 'Mon Profil';
     }
     
 })
