@@ -1,0 +1,125 @@
+main {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    margin-left: 20px;
+}
+
+li {
+    display: block;
+    background-color: #A8A8A8;
+    text-align: center;
+    padding-top: 20%;
+    height: 50px;
+    width: 190px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #D9D9D9;
+}
+
+#monCompte{
+    margin: 0 25%;
+    display: none;
+}
+#parametres{
+    margin: 0 25%;
+    display: none;
+}
+
+.changeH1 {
+    color: white;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+#frLangue {
+    color: white;
+    font-size: x-large;
+    visibility: hidden;
+}
+
+.btn-supp {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-supp:hover {
+    background-color: #c0392b;
+}
+
+/* Input */
+
+:root {
+    --dark-grey: #151922;
+    --med-grey: #ccc;
+    --light-grey: #ddd;
+    --blue-grey: #121b30;
+    --active: #4a4a4a;
+    --not-active: #4a4a4a;
+    --highlight: #fda737;
+    /* #7b68ee; #ffce06; #3498db; fd7c23*/
+    --highlight-accent: #fbc730;
+    /* 3498db; c39d03; 0b79c3; fda737*/
+    --link-underline: #ffce06;
+    --status: rgba(255, 0, 0, 1);
+    --search-outline: #4a4a4a;
+    --dark-blue: #131c28;
+    --med-blue: #11386b;
+    --lighter-blue: #1a57a8;
+    --lightest-blue: #0b5cff;
+    --border: #0b79c3;
+}
+
+
+.content {
+    position: relative;
+    margin-right: 20px;
+}
+
+.content ::placeholder {
+    color: var(--light-grey);
+}
+
+.content :focus {
+    cursor: text;
+    outline: none;
+}
+
+.content input {
+    padding: 10px 1px;
+    margin-top: 5px ;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--light-grey);
+    border-bottom: 3px solid var(--light-grey);
+    font-size: large;
+    width: 300px;
+}
+
+.content input~span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--highlight);
+    transition: 1s;
+}
+
+.content input:focus~span {
+    width: 100%;
+}
+
+/* Fin input */
