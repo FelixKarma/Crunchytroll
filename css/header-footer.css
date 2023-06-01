@@ -247,15 +247,30 @@ profiltable{
     padding: 20px;
 }
 .categorietable{
-    width: 100px;
-    height: 20px;
+    width: 160px;
+    max-height: 20px;
     text-align: center;
+    font-size: 14px;
     background-color: #4FACFE;
     border: 3px solid #333333;
+}
+.categorietable a{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #4FACFE;
+    color: #FFFFFF;
 }
 .categorietable:hover{
     background-color: #0071D5;
     border: 2px solid #FFFFFF;
+}
+.categorietable a:hover{
+    background-color: #0071D5;
 }
 .buttoncontact {
     position: fixed;
