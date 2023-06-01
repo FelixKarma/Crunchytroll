@@ -1,0 +1,24 @@
+#mentionlegale{
+    display: flex;
+    justify-content: center;
+}
+#taillementionlegale{
+    text-align: center;
+    color: #ffffff;
+    width: 1000px;
+}
+#hide{
+    color: #212121;
+}
+#buttonaccepte{
+    width: 223px;
+    height: 45px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background: #4FACFE;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#buttonaccepte:hover{
+    background: #0071D5;
+    border-color: #FFFFFF;
+}
