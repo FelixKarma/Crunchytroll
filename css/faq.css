@@ -1,0 +1,27 @@
+.question {
+    cursor: pointer;
+    text-align: center;
+    margin: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #4facfe;
+  }
+  
+.answer {
+    display: none;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+}
+#titrefaq{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    color: #4facfe;
+    background-color: #fff;
+    font-weight: bolder;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/header-footer.css">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="../css/faq.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../img/crunchytroll-logo.png">
@@ -14,33 +14,96 @@
 <body>
     <header>
         <a href="Accueil.html">
-        <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
+            <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
                 <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
-            </a>
+        </a>
         </figure>
         <div id="headerflexbox1">
             <div id="barrerecherche">
-                <input class="searchtext" type="search" id="search" value=""
-                    placeholder="Recherche manga...">
+                <input class="searchtext" type="search" id="search" value="" placeholder="Recherche manga...">
             </div>
             <div id="headerflexbox2">
                 <a href="accueil.html"><button id="bouttonaccueil1">Accueil</button></a>
-                <button id="buttoncategoriebutton1">Catégories</button>
-                <button id="buttonnouscontacterbutton1">Nous contacter</button>
+                <button id="buttoncategoriebutton1" onclick="openPopup()">Catégories</button>
+                <div class="popup-overlay" id="popupOverlay" onclick="closePopup()"></div>
+                <div class="popup" id="popup">
+                    <span class="popup-close" onclick="closePopup()">&times;</span>
+                    <table id="fondcategorietable">
+                        <tr>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie1</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie2</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie3</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie4</td>
+                            </a>
+                        </tr>
+                        <tr>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie5</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie6</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie7</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie8</td>
+                            </a>
+                        </tr>
+                        <tr>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie9</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie10</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie11</td>
+                            </a>
+                            <a href="categorie.html#">
+                                <td class="categorietable">categorie12</td>
+                            </a>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <button id="buttonnouscontacterbutton1" onclick="openbuttoncontact()">Nous contacter</button>
+                <div class="buttoncontact-overlay" id="buttoncontactOverlay" onclick="closebuttoncontact()"></div>
+                <div class="buttoncontact" id="buttoncontact">
+                    <span class="buttoncontact-close" onclick="closebuttoncontact()">&times;</span>
+                    <form>
+                        <label for="email">Destinataire :</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="subject">Sujet :</label>
+                        <input type="text" id="subject" name="subject" required><br><br>
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                        <div class="contactmecentre"><input type="submit" class="contactme" value="Envoyer"></div>
+                    </form>
+                </div>
             </div>
         </div>
         <figure>
             <img src="../img/logoprofil.png" alt="bouton de profil" id="display">
         </figure>
         <div class="menu" id="menu">
-            <table>
-               <tr>
+            <table id="profiltable">
+                <tr>
                     <td><img src="../img/profil picture.jpg" id="profilpicture"></td>
                     <td>Karmas</td>
                 </tr>
                 <tr>
-                    <td><a href="profil.html"> <img src="../img/Vector (1).png" class="taillephoto" alt=""> </a></td>
-                    <td><a href="profil.html">Mon profil</a></td>
+                    <td><a href="profil.html" class="notexthref"> <img src="../img/Vector (1).png" class="taillephoto"
+                                alt=""> </a></td>
+                    <td><a href="profil.html" class="notexthref">Mon profil</a></td>
                 </tr>
                 <tr>
                     <td><img src="../img/Vector (2).png" class="taillephoto" alt=""></td>
@@ -48,7 +111,7 @@
                 </tr>
                 <tr>
                     <td><img src="../img/Vector (3).png" class="taillephoto" alt=""></td>
-                    <td>Parametre</td>
+                    <td>paramètres</td>
                 </tr>
                 <tr>
                     <td><img src="../img/ic_baseline-log-out.png" class="taillephoto" alt=""></td>
@@ -58,6 +121,22 @@
         </div>
     </header>
     <main>
+        <h1 id="titrefaq">FAQ - Crunchytroll</h1>
+  
+  <div class="question" onclick="toggleAnswer(1)">Qu'est-ce que l'anime ?</div>
+  <div class="answer" id="answer-1">L'anime est un terme japonais qui désigne les séries animées ou les films d'animation.</div>
+  
+  <div class="question" onclick="toggleAnswer(2)">Comment regarder des anime sur ce site ?</div>
+  <div class="answer" id="answer-2">Sur notre site, vous pouvez regarder des anime en streaming. Il vous suffit de rechercher l'anime que vous souhaitez regarder, puis de cliquer sur le lien de l'épisode ou du film pour le visionner en ligne.</div>
+  
+  <div class="question" onclick="toggleAnswer(3)">Les vidéos sont-elles disponibles en haute qualité ?</div>
+  <div class="answer" id="answer-3">Oui, nous proposons des vidéos d'anime en haute qualité. La plupart de nos vidéos sont disponibles en résolution HD pour une meilleure expérience de visionnage.</div>
+  
+  <div class="question" onclick="toggleAnswer(4)">Est-ce que le contenu est sous-titré ou doublé en français ?</div>
+  <div class="answer" id="answer-4">Nous proposons à la fois des animes sous-titrés et doublés en français. Vous pouvez choisir la version qui vous convient le mieux.</div>
+  
+  <div class="question" onclick="toggleAnswer(5)">Comment contacter le support en cas de problème ?</div>
+  <div class="answer" id="answer-5">Si vous rencontrez un problème ou avez des questions, vous pouvez nous contacter en utilisant le formulaire de contact disponible sur notre site. Nous nous efforcerons de vous répondre dans les plus brefs délais.</div><br><br>
     </main>
     <footer id="logofig">
         <figure >
@@ -83,5 +162,13 @@
     </footer>
     <script src="../js/barrerecherche.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/buttoncategorie.js"></script>
+    <script src="../js/buttoncontact.js"></script>
+    <script>
+        function toggleAnswer(index) {
+          var answer = document.getElementById('answer-' + index);
+          answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        }
+      </script>
 </body>
 </html>    
