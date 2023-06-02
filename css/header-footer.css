@@ -327,3 +327,11 @@ profiltable{
     margin-left: 775px;
     margin-top: 160px;
 }
+a{
+ color: #212121;
+ text-decoration: #212121;
+}
+a:visited{
+ color: #212121;
+ text-decoration: #212121;
+}

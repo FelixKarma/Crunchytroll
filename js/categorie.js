@@ -23,7 +23,7 @@ let tableauMangas = [
     new Categorieapi("MASHLE", "../img/afficheManga/MASHLE.png", ['Action', 'Aventure', 'Comedie', 'Fantasy'], `Mash Burnedead est né sans pouvoirs magiques mais a survécu caché dans une épaisse forêt. Le jour où son secret est découvert, il se voit proposer un marché : intégrer Easton, la prestigieuse académie de magie, et y obtenir le titre d'élu divin. Pour retrouver sa vie tranquille, Mash accepte.`),
     new Categorieapi("Kimi wa Houkago Insomnia", "../img/afficheManga/Kimi wa Houkago Insomnia.png", ['Comedie', 'Romance', 'Slice Of Life'], `Ganta Nakami est insomniaque. À l'école, il semble donc fatigué, voire associable. Un jour, dans la salle d'astronomie, il découvre Isaki Magari, endormie dans un coin. Insomniaque comme lui, mais bien plus sociable, elle lui propose de partager l'endroit pour y dormir en cachette. Leur rapprochement semble les aider à retrouver le sommeil, chacun étant sensible aux battements de cœur de l'autre...`),
     new Categorieapi("Dead Mount Death Play", "../img/afficheManga/Dead Mount Death Play.png", ['Action', 'Fantasy'], `Le sort du monde se joue lorsque s'affrontent le Maître des corps, un démon nécromancien ayant accumulé une puissance incommensurable, et un légendaire chevalier sacré. Mais, au dernier moment, le monstre use d'un mystérieux arcane magique qui enveloppe le héros d'une étrange lumière. À travers l'espace et le temps, un garçon nommé Polka Shinoyama se réveille en ne se sentant pas tout à fait lui-même... Qui pouvait s'attendre à ce que l'issue de la confrontation se déroule de cette façon ?`),
-    new Categorieapi("HUNTERxHUNTER", "../img/afficheManga/HUNTERxHUNTER.png", ['Aventure', 'Comedie', 'Drama', 'Fantasy'], `Le jeune Gon vit sur une petite île avec sa tante. Abandonné par son père qui est un Hunter, à la fois un aventurier et un chasseur de primes, Gon décide à l'âge de 12 ans de partir pour devenir un Hunter. Cela ne sera pas chose aisée, il devra passer une suite de tests et examens en compagnie de milliers d'autres prétendants au titre de Hunter. Il sera aidé par de nouvelles connaissances qui aspirent au même but que lui, telles que Kurapika, Leorio et Killua.`),
+    new Categorieapi("HUNTERxHUNTER", "../img/afficheManga/hunterhunter.png", ['Aventure', 'Comedie', 'Drama', 'Fantasy'], `Le jeune Gon vit sur une petite île avec sa tante. Abandonné par son père qui est un Hunter, à la fois un aventurier et un chasseur de primes, Gon décide à l'âge de 12 ans de partir pour devenir un Hunter. Cela ne sera pas chose aisée, il devra passer une suite de tests et examens en compagnie de milliers d'autres prétendants au titre de Hunter. Il sera aidé par de nouvelles connaissances qui aspirent au même but que lui, telles que Kurapika, Leorio et Killua.`),
     new Categorieapi("NARUTO", "../img/afficheManga/NARUTO.png", ['Action', 'Aventure', 'Comedie', 'Drama', 'Fantasy'], `Dans le village de Konoha vit Naruto, un jeune garçon détesté et craint des villageois du fait qu'il détienne en lui Kyuubi (démon renard à neuf queues) d'une incroyable force, qui a tué un grand nombre de personnes. Le ninja le plus puissant de Konoha à l'époque, le quatrième Hokage, Minato Namikaze, réussit à sceller ce démon dans le corps de Naruto. Malheureusement il y laissa la vie. C'est ainsi que douze ans plus tard, Naruto rêve de devenir le plus grand Hokage de Konoha afin que tous le reconnaissent à sa juste valeur. Mais la route pour devenir Hokage est très longue et Naruto sera confronté à un bon nombre d'épreuves et devra affronter de nombreux ennemis pour atteindre son but !`),
     new Categorieapi("Black Clover", "../img/afficheManga/Black Clover.png", ['Action', 'Aventure', 'Fantasy'], `Asta et Yuno sont deux adolescents de 15 ans qui ont grandi ensemble dans un petit village du royaume de Clover. Leur but ultime à tous les deux est de devenir le prochain empereur-mage ! Étrangement, dans ce royaume, Asta est le seul qui soit incapable de produire la moindre étincelle magique. Loin d'être découragé, il participe tout de même avec son ami (et rival) Yuno à la cérémonie annuelle de remise des grimoires qui rassemble les jeunes de 15 ans dans tout le royaume de Clover. Lors de cette cérémonie, Yuno recevra un grimoire légendaire. Ce qui n'est pas le cas d'Asta car malheureusement pour lui, aucun grimoire ne lui sera attribué ce jour là. Mais Asta ne se laissera pas abattre, peut importe les efforts qu'il aura à fournir, il compte bien rivaliser avec Yuno pour aller au bout de son rêve....`),
     new Categorieapi("Chainsaw Man", "../img/afficheManga/Chainsaw Man.png", ['Action', 'Comedie', 'Drama', 'Fantasy'], `Pour rembourser ses dettes, Denji, jeune homme dans la dèche la plus totale, est exploité en tant que Devil Hunter avec son chien-démon-tronçonneuse, "Pochita". Mais suite à une cruelle trahison, il voit enfin une possibilité de se tirer des bas-fonds où il croupit ! Devenu surpuissant après sa fusion avec Pochita, Denji est recruté par une organisation et part à la chasse aux démons...`),
@@ -64,17 +64,15 @@ if (document.location.href.includes('categorie.html#')) {
             }
         }
     } 
-//        if (response == false) {
-//         document.location.assign('404.html');
-//     }
-// }
-// else {
-//     document.location.assign('404.html')
+       if (response == false) {
+        document.location.assign('404.html');
+    }
 }
-
-
+else {
+    document.location.assign('404.html')
+}
 const reloding = () => {
     setTimeout(() => {
         location.reload();
-    }, 1000);
+    }, 500);
 }
