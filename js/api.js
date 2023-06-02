@@ -80,9 +80,10 @@ if (document.location.href.includes('manga.html#')) {
             break;
         }
     }
-    if (awnser == false) {
-        document.location.assign('404.html');
-    }
-} else {
-    document.location.assign('404.html');
+    // if (awnser == false) {
+    //     document.location.assign('404.html');
+    // }
 }
+//  else {
+//     document.location.assign('404.html');
+// }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/categorie.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,46 +33,45 @@
                     <span class="popup-close" onclick="closePopup()">&times;</span>
                     <table id="fondcategorietable">
                         <tr>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie1</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie2</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie3</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie4</td>
-                            </a>
+
+                            <td class="categorietable"><a href="categorie.html#action">Action</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#aventure">Aventure</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#comedie">Comedie</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#drama">Drama</a></td>
+
                         </tr>
                         <tr>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie5</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie6</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie7</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie8</td>
-                            </a>
+
+                            <td class="categorietable"><a href="categorie.html#fantasy">Fantasy</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#horreur">Horreur</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#meca">Meca</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#psychologique">Psychologique</a></td>
+
                         </tr>
                         <tr>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie9</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie10</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie11</td>
-                            </a>
-                            <a href="categorie.html#">
-                                <td class="categorietable">categorie12</td>
-                            </a>
+
+                            <td class="categorietable"><a href="categorie.html#science-fiction">Science-Fiction</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#slice_of_life">Slice Of Life</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#romance">Romance</a></td>
+
+                            <td class="categorietable"><a href="categorie.html#hentai">Hentai</a></td>
+
                         </tr>
                     </table>
                 </div>
@@ -112,7 +112,8 @@
                     <td>Favoris</td>
                 </tr>
                 <tr>
-                   <td> <a href="profil.html" class="notexthref"><img src="../img/Vector (3).png" class="taillephoto" alt=""></a></td>
+                    <td> <a href="profil.html" class="notexthref"><img src="../img/Vector (3).png" class="taillephoto"
+                                alt=""></a></td>
                     <td> <a href="profil.html" class="notexthref">paramètres</a></td>
                 </tr>
                 <tr>
@@ -123,7 +124,13 @@
         </div>
     </header>
     <main>
-        
+        <div class="center">
+            <h1 id="nomcategorie">#</h1>
+        </div>
+        <section id="allMangas">
+
+        </section>
+
     </main>
     <footer id="logofig">
         <figure>
@@ -151,6 +158,7 @@
     <script src="../js/menu.js"></script>
     <script src="../js/buttoncategorie.js"></script>
     <script src="../js/buttoncontact.js"></script>
+    <script src="../js/categorie.js"></script>
 </body>
 
 </html>
