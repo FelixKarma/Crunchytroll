@@ -69,6 +69,7 @@ img{
   align-items: center;
   background-color: #333;
   padding: 20px;
+  margin-bottom: 50px;
 }
 .accueilnouveauté1d{
   border: 3px solid #94F9FF;
@@ -85,4 +86,12 @@ img{
 }
 a{
   text-decoration: none;
+}
+.accueilvoirplus{
+  margin-top: 305px;
+  margin-right: -50px;
+}
+a:active,
+a:visited {
+  color: #4facfe;
 }
