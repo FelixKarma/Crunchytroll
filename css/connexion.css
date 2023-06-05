@@ -1,0 +1,41 @@
+  .container {
+    max-width: 400px;
+    margin: 131px auto;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 4px solid #94F9FF;
+  }
+
+
+#connexion, #messagealert {
+    text-align: center;
+    margin: 30px;
+    color: #ffffff;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    border: 2px solid #94F9FF;
+  }
+
+#seco {
+    width: 100%;
+    padding: 10px;
+    background-color: #4FACFE;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#seco:hover {
+    background-color: #0071D5;
+    border: 2px solid #ffffff;
+    
+  }

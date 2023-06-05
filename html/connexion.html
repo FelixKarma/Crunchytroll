@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/connexion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/header-footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="../img/crunchytroll-logo.png">
+  <title>Crunchytroll</title>
+</head>
+
+<body>
+  <header>
+    <a href="Accueil.html">
+      <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
+        <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
+    </a>
+    </figure>
+    <div id="headerflexbox1">
+      <div id="barrerecherche">
+        <input class="searchtext" type="search" id="search" value="" placeholder="Recherche manga...">
+      </div>
+      <div id="headerflexbox2">
+        <a href="accueil.html"><button id="bouttonaccueil1">Accueil</button></a>
+        <button id="buttoncategoriebutton1" onclick="openPopup()">Catégories</button>
+        <div class="popup-overlay" id="popupOverlay" onclick="closePopup()"></div>
+        <div class="popup" id="popup">
+          <span class="popup-close" onclick="closePopup()">&times;</span>
+          <table id="fondcategorietable">
+            <tr>
+
+              <td class="categorietable"><a href="categorie.html#action">Action</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#aventure">Aventure</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#comedie">Comedie</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#drama">Drama</a></td>
+
+            </tr>
+            <tr>
+
+              <td class="categorietable"><a href="categorie.html#fantasy">Fantasy</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#horreur">Horreur</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#meca">Meca</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#psychologique">Psychologique</a></td>
+
+            </tr>
+            <tr>
+
+              <td class="categorietable"><a href="categorie.html#science-fiction">Science-Fiction</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#slice_of_life">Slice Of Life</a></td>
+
+
+              <td class="categorietable"><a href="categorie.html#romance">Romance</a></td>
+
+              <td class="categorietable"><a href="../html/erreur.html">Hentai</a></td>
+
+            </tr>
+          </table>
+        </div>
+
+
+        <button id="buttonnouscontacterbutton1" onclick="openbuttoncontact()">Nous contacter</button>
+        <div class="buttoncontact-overlay" id="buttoncontactOverlay" onclick="closebuttoncontact()"></div>
+        <div class="buttoncontact" id="buttoncontact">
+          <span class="buttoncontact-close" onclick="closebuttoncontact()">&times;</span>
+          <form>
+            <label for="email">Destinataire :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <div class="contactmecentre"><input type="submit" class="contactme" value="Envoyer"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <figure>
+      <img src="../img/logoprofil.png" alt="bouton de profil" id="display">
+    </figure>
+    <div class="menu" id="menu">
+      <table id="profiltable">
+        <tr>
+          <td><img src="../img/profil picture.jpg" id="profilpicture"></td>
+          <td>Karmas</td>
+        </tr>
+        <tr>
+          <td><a href="profil.html" class="notexthref"> <img src="../img/Vector (1).png" class="taillephoto" alt="">
+            </a></td>
+          <td><a href="profil.html" class="notexthref">Mon profil</a></td>
+        </tr>
+        <tr>
+          <td><a href="favoris.html"><img src="../img/Vector (2).png" class="taillephoto" alt=""></a></td>
+          <td><a href="favoris.html">Favoris</a></td>
+        </tr>
+        <tr>
+          <td> <a href="profil.html" class="notexthref"><img src="../img/Vector (3).png" class="taillephoto" alt=""></a>
+          </td>
+          <td> <a href="profil.html" class="notexthref">Paramètres</a></td>
+        </tr>
+        <tr>
+          <td><img src="../img/ic_baseline-log-out.png" class="taillephoto" alt=""></td>
+          <td>Déconnexion</td>
+        </tr>
+      </table>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2 id="connexion">Connexion</h2>
+      <form id="formulairelogin">
+        <input id="username" type="text" placeholder="Nom d'utilisateur" required>
+        <input id="password" type="password" placeholder="Mot de passe" required>
+        <button id="seco" type="submit">Se connecter</button>
+      </form>
+      <p id="messagealert"></p>
+    </div>
+  </main>
+  <footer id="logofig">
+    <figure>
+      <a href="Accueil.html">
+        <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
+        <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
+    </figure>
+    <div id="iconeresaux">
+      <div id="logoresaux">
+        <figure>
+          <a href="404.html">
+            <img src="../img/feFacebook0.png" alt="logofacebook" id="facebook">
+            <img src="../img/Vector.png" alt="loginsta" id="insta">
+          </a>
+
+        </figure>
+      </div>
+      <div id="footerflexbox">
+        <a href="FAQ.html"><button id="buttonfaq">FAQ</button></a>
+        <a href="Mention légal.html"><button id="buttonmentionlegale">Mention légale</button></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/barrerecherche.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/buttoncategorie.js"></script>
+  <script src="../js/buttoncontact.js"></script>
+  <script src="../js/connexion.js"></script>
+</body>
+
+</html>

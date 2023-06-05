@@ -207,12 +207,6 @@ footer{
 profiltable{
     margin-left: 5px;
 }
-.notexthref{
-    text-decoration: none;
-}
-.notexthref:visited{
-    color: #212121;
-}
 .popup {
     position: fixed;
     top: 0%;
@@ -327,11 +321,36 @@ profiltable{
     margin-left: 775px;
     margin-top: 160px;
 }
-a{
- color: #212121;
- text-decoration: #212121;
+.notexthref{
+    text-decoration: none;
+    color: #212121;
 }
-a:visited{
- color: #212121;
- text-decoration: #212121;
+.notexthref:visited{
+    color: #212121;
+    text-decoration: none;
+}
+.secobutton{
+    text-align: center;
+    text-decoration: none;
+    background: #686868;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    height: 30px;
+    min-width: 150px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 185px 37px;
+}
+.secobutton:hover{
+    background: #333333;
+    border-color: #FFFFFF;
+}
+.deconnexion{
+    background-color: #4FACFE;
+    color: #212121;
+    text-decoration: none;
+    border: 0px;
+    font-size: 16px;
+    padding: 0px;
 }
