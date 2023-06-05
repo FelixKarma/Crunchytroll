@@ -57,7 +57,6 @@ body{
 #mangabackgroundsynopsis{
   color: #fff;
   display: flex;
-  position: relative;
   width: 800px;
   justify-content: end;
   align-content: center;
