@@ -19,6 +19,13 @@ if(document.location.href.includes("connexion.html")){
         }
     });
 }
+
+function checkLogin(username, password) {
+    return (username === localStorage.getItem('bonusername') && password === localStorage.getItem('bonmdp'));
+}
+
+
+
 function deconnexion(){
 localStorage.removeItem('login')
 setTimeout(function() {
@@ -27,16 +34,38 @@ setTimeout(function() {
 }
 
 
-function checkLogin(username, password) {
-    return (username === "Karmas" && password === "Akabane");
-}
+
+const submitbutton = document.getElementById("submitbutton");
+if(document.location.href.includes("enregistrer.html")){
+    document.addEventListener("DOMContentLoaded", function() {
+        // Votre code ici
+        submitbutton.addEventListener("click", function () {
+            const usernom = document.getElementById("nom").value;
+            const cpassword = document.getElementById("cpassword").value;
+            const confirmpassword = document.getElementById("confirmpassword").value;
+            if(cpassword == confirmpassword){
+                localStorage.setItem('bonusername', usernom);
+                localStorage.setItem('bonmdp', cpassword);
+                document.location.assign("accueil.html")
+                console.log("object");      
+            }
+            else{
+                erreurmsg.innerText = "Mot de passe différent";
+                return false;
+            }
+        });
+    });
+};
+
+
+
 let table = document.getElementById('menu')
 let seconnecter = document.getElementById('menu')
 if(localStorage.getItem('login') == 'true'){
     table.innerHTML= `<table id="profiltable">
     <tr>
         <td><img src="../img/profil picture.jpg" id="profilpicture"></td>
-        <td>Karmas</td>
+        <td>${localStorage.getItem('bonusername')}</td>
     </tr>
     <tr>
         <td><a href="profil.html" class="notexthref"> <img src="../img/Vector (1).png" class="taillephoto"
