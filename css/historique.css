@@ -1,5 +1,7 @@
 .center {
-    margin: 50px 25% ;
+    margin: 75px;
+    margin-left: 265px;
+    margin-bottom: 120px;
     text-align: center;
     width: 911px;
     max-height: 42px;
@@ -10,7 +12,8 @@
 }
 .contenu{
     color: #ffffff;
-    margin: 30px 17% ;
+    margin: 50px;
+    margin-left: 8%;
     width: 1198px;
     height: 270px;
     display: flex;
