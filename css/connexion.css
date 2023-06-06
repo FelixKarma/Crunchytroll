@@ -32,10 +32,25 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 15px;
   }
 
 #seco:hover {
     background-color: #0071D5;
     border: 2px solid #ffffff;
     
+  }
+#mdpoublie {
+    width: 100%;
+    padding: 10px;
+    background-color: #4FACFE;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#mdpoublie:hover {
+    background-color: #0071D5;
+    border: 2px solid #ffffff;
   }

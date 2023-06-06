@@ -46,7 +46,7 @@ if(document.location.href.includes("enregistrer.html")){
             if(cpassword == confirmpassword){
                 localStorage.setItem('bonusername', usernom);
                 localStorage.setItem('bonmdp', cpassword);
-                document.location.assign("accueil.html")
+                document.location.assign("connexion .html")
                 console.log("object");      
             }
             else{
@@ -61,7 +61,6 @@ if(document.location.href.includes("enregistrer.html")){
 
 let table = document.getElementById('menu')
 let seconnecter = document.getElementById('menu')
-let inscrire = document.getElementById('menu')
 if(localStorage.getItem('login') == 'true'){
     table.innerHTML= `<table id="profiltable">
     <tr>
@@ -89,6 +88,6 @@ if(localStorage.getItem('login') == 'true'){
 </table>`
   }
 else{
-    seconnecter.innerHTML = `<a class="secobutton" href="connexion.html">Se connecter</a>`
-    inscrire.innerHTML = `<a class="secobutton" href="enregistrer.html">S'inscrire</a>`
+    seconnecter.innerHTML = `<a class="secobutton" href="connexion.html">Se connecter</a>
+    <a class="sincrire" href="enregistrer.html">S'inscrire</a>`
 }
