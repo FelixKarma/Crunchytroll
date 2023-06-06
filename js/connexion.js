@@ -46,7 +46,7 @@ if(document.location.href.includes("enregistrer.html")){
             if(cpassword == confirmpassword){
                 localStorage.setItem('bonusername', usernom);
                 localStorage.setItem('bonmdp', cpassword);
-                document.location.assign("connexion .html")
+                document.location.assign("connexion.html")
                 console.log("object");      
             }
             else{
