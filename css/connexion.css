@@ -16,6 +16,7 @@
   }
 
   input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 90%;
     padding: 10px;
@@ -41,7 +42,8 @@
     
   }
 #mdpoublie {
-    width: 100%;
+    width: 40%;
+    margin: 0 30%;
     padding: 10px;
     background-color: #4FACFE;
     color: #ffffff;
@@ -54,3 +56,25 @@
     background-color: #0071D5;
     border: 2px solid #ffffff;
   }
+#formulairemdpoublie{
+  display: none;
+}
+#recupmdp {
+  width: 100%;
+  padding: 10px;
+  background-color: #4FACFE;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#recupmdp:hover {
+  background-color: #0071D5;
+  border: 2px solid #ffffff;
+  
+}
+#labelmail{
+  color: #ffffff;
+}

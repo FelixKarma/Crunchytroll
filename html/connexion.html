@@ -100,14 +100,21 @@
 </header>
   <main>
     <div class="container">
-      <h2 id="connexion">Connexion</h2>
       <form id="formulairelogin">
+        <h2 id="connexion">Connexion</h2>
         <input id="username" type="text" placeholder="Nom d'utilisateur" required>
         <input id="password" type="password" placeholder="Mot de passe" required>
         <button id="seco" type="submit">Se connecter</button>
       </form>
       <button id="mdpoublie">Mot de passe oublié</button>
       <p id="messagealert"></p>
+      <form id="formulairemdpoublie">
+        <h2 id="connexion">Mot de passe oublié</h2>
+        <label id="labelmail" for="recupmail">Email</label>
+        <input type="email" id="recupmail" placeholder="Email" required>
+        <button id="recupmdp" type="submit">Récupérer mot de passe</button>
+        <p id="textmdpoublie"></p>
+      </form>
     </div>
   </main>
   <footer id="logofig">

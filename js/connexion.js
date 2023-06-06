@@ -91,3 +91,13 @@ else{
     seconnecter.innerHTML = `<a class="secobutton" href="connexion.html">Se connecter</a>
     <a class="sincrire" href="enregistrer.html">S'inscrire</a>`
 }
+let formlogin = document.getElementById('formulairelogin')
+let mdpoublie = document.getElementById('mdpoublie')
+let formulairemdpoublie = document.getElementById('formulairemdpoublie')
+let textmdpoublie = document.getElementById('textmdpoublie')
+
+mdpoublie.addEventListener("click", () => {
+        formlogin.style.display = 'none';
+        mdpoublie.style.display = 'none';
+        formulairemdpoublie.style.display = 'block';
+})
