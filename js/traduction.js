@@ -230,7 +230,7 @@ if (localStorage.getItem('lang') == 'en') {
     }
     let categories = ['action', 'aventure', 'comedie', 'drama', 'fantasy', 'horreur', 'meca', 'psychologie', 'science-fiction', 'slice_of_life', 'romance']
     let categoriesEN = ['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror', 'Mecha', 'Psychology', 'Science Fiction', 'Slice of Life', 'Romance'];
-    let categoriesRU = ['боевик', 'приключения', 'комедия', 'драма', 'фэнтези', 'ужасы', 'меха', 'психология', 'научная фантастика', 'повседневность', 'романтика'];
+    
 
     if (document.location.href.includes("categorie.html")) {
         let cate;
@@ -712,5 +712,263 @@ if (localStorage.getItem('lang') == 'ru') {
         droitmentionlegal.innerText = 'Эти юридические уведомления регулируются применимым правом в вашей стране. В случае спора компетентными судами будут суды юрисдикции Jovany (босс) и Romain le Crack.';
         buttonaccepte.innerText = 'Я согласен';
 
+    }
+    if (document.location.href.includes("categorie.html")) {
+        let cate;
+        nomcategorie
+        for (const categorie of categories) {
+            if (document.location.href.includes(categorie)) {
+                cate = categorie;
+            }
+        }
+        let categoriesRU = ['боевик', 'приключения', 'комедия', 'драма', 'фэнтези', 'ужасы', 'меха', 'психология', 'научная фантастика', 'повседневность', 'романтика'];
+        switch (cate) {
+            case 'action':
+                let actionsynopsis0 = document.getElementById('categorysynopsis0');
+                let actionsynopsis1 = document.getElementById('categorysynopsis1');
+                let actionsynopsis2 = document.getElementById('categorysynopsis2');
+                let actionsynopsis3 = document.getElementById('categorysynopsis3');
+                let actionsynopsis4 = document.getElementById('categorysynopsis4');
+                let actionsynopsis5 = document.getElementById('categorysynopsis5');
+                let actionsynopsis6 = document.getElementById('categorysynopsis6');
+                let actionsynopsis7 = document.getElementById('categorysynopsis7');
+                let actionsynopsis8 = document.getElementById('categorysynopsis8');
+                let actionsynopsis9 = document.getElementById('categorysynopsis9');
+                let actionsynopsis10 = document.getElementById('categorysynopsis10');
+                let actionsynopsis11 = document.getElementById('categorysynopsis11');
+                let actionsynopsis12 = document.getElementById('categorysynopsis12');
+                let actionsynopsis13 = document.getElementById('categorysynopsis13');
+                let actionsynopsis14 = document.getElementById('categorysynopsis14');
+                let actionsynopsis15 = document.getElementById('categorysynopsis15');
+                let actionsynopsis16 = document.getElementById('categorysynopsis16');
+                let actionsynopsis17 = document.getElementById('categorysynopsis17');
+                let actionsynopsis18 = document.getElementById('categorysynopsis18');
+                let actionsynopsis19 = document.getElementById('categorysynopsis19');
+                let actionsynopsis20 = document.getElementById('categorysynopsis20');
+                actionsynopsis0.innerText = tableauMangasRU[0].synopsis
+                actionsynopsis1.innerText = tableauMangasRU[2].synopsis
+                actionsynopsis2.innerText = tableauMangasRU[4].synopsis
+                actionsynopsis3.innerText = tableauMangasRU[5].synopsis
+                actionsynopsis4.innerText = tableauMangasRU[6].synopsis
+                actionsynopsis5.innerText = tableauMangasRU[9].synopsis
+                actionsynopsis6.innerText = tableauMangasRU[10].synopsis
+                actionsynopsis7.innerText = tableauMangasRU[12].synopsis
+                actionsynopsis8.innerText = tableauMangasRU[14].synopsis
+                actionsynopsis9.innerText = tableauMangasRU[16].synopsis
+                actionsynopsis10.innerText = tableauMangasRU[17].synopsis
+                actionsynopsis11.innerText = tableauMangasRU[18].synopsis
+                actionsynopsis12.innerText = tableauMangasRU[19].synopsis
+                actionsynopsis13.innerText = tableauMangasRU[21].synopsis
+                actionsynopsis14.innerText = tableauMangasRU[22].synopsis
+                actionsynopsis15.innerText = tableauMangasRU[24].synopsis
+                actionsynopsis16.innerText = tableauMangasRU[25].synopsis
+                actionsynopsis17.innerText = tableauMangasRU[26].synopsis
+                actionsynopsis18.innerText = tableauMangasRU[27].synopsis
+                actionsynopsis19.innerText = tableauMangasRU[28].synopsis
+                actionsynopsis20.innerText = tableauMangasRU[29].synopsis
+                nomcategorie.innerText = categoriesRU[0];
+                break;
+                case 'aventure':
+                    let aventuresynopsis0 = document.getElementById('categorysynopsis0');
+                    let aventuresynopsis1 = document.getElementById('categorysynopsis1');
+                    let aventuresynopsis2 = document.getElementById('categorysynopsis2');
+                    let aventuresynopsis3 = document.getElementById('categorysynopsis3');
+                    let aventuresynopsis4 = document.getElementById('categorysynopsis4');
+                    let aventuresynopsis5 = document.getElementById('categorysynopsis5');
+                    let aventuresynopsis6 = document.getElementById('categorysynopsis6');
+                    let aventuresynopsis7 = document.getElementById('categorysynopsis7');
+                    let aventuresynopsis8 = document.getElementById('categorysynopsis8');
+                    let aventuresynopsis9 = document.getElementById('categorysynopsis9');
+                    let aventuresynopsis10 = document.getElementById('categorysynopsis10');
+                    let aventuresynopsis11 = document.getElementById('categorysynopsis11');
+                    let aventuresynopsis12 = document.getElementById('categorysynopsis12');
+                    let aventuresynopsis13 = document.getElementById('categorysynopsis13');
+                    aventuresynopsis0.innerText = tableauMangasRU[0].synopsis
+                    aventuresynopsis1.innerText = tableauMangasRU[2].synopsis
+                    aventuresynopsis2.innerText = tableauMangasRU[4].synopsis
+                    aventuresynopsis3.innerText = tableauMangasRU[6].synopsis
+                    aventuresynopsis4.innerText = tableauMangasRU[10].synopsis
+                    aventuresynopsis5.innerText = tableauMangasRU[12].synopsis
+                    aventuresynopsis6.innerText = tableauMangasRU[15].synopsis
+                    aventuresynopsis7.innerText = tableauMangasRU[16].synopsis
+                    aventuresynopsis8.innerText = tableauMangasRU[17].synopsis
+                    aventuresynopsis9.innerText = tableauMangasRU[19].synopsis
+                    aventuresynopsis10.innerText = tableauMangasRU[25].synopsis
+                    aventuresynopsis11.innerText = tableauMangasRU[26].synopsis
+                    aventuresynopsis12.innerText = tableauMangasRU[27].synopsis
+                    aventuresynopsis13.innerText = tableauMangasRU[28].synopsis
+                    nomcategorie.innerText = categoriesRU[1];
+                    break;
+            case 'comedie':
+                let comediesynopsis0 = document.getElementById('categorysynopsis0');
+                let comediesynopsis1 = document.getElementById('categorysynopsis1');
+                let comediesynopsis2 = document.getElementById('categorysynopsis2');
+                let comediesynopsis3 = document.getElementById('categorysynopsis3');
+                let comediesynopsis4 = document.getElementById('categorysynopsis4');
+                let comediesynopsis5 = document.getElementById('categorysynopsis5');
+                let comediesynopsis6 = document.getElementById('categorysynopsis6');
+                let comediesynopsis7 = document.getElementById('categorysynopsis7');
+                let comediesynopsis8 = document.getElementById('categorysynopsis8');
+                let comediesynopsis9 = document.getElementById('categorysynopsis9');
+                let comediesynopsis10 = document.getElementById('categorysynopsis10');
+                let comediesynopsis11 = document.getElementById('categorysynopsis11');
+                let comediesynopsis12 = document.getElementById('categorysynopsis12');
+                let comediesynopsis13 = document.getElementById('categorysynopsis13');
+                let comediesynopsis14 = document.getElementById('categorysynopsis14');
+                let comediesynopsis15 = document.getElementById('categorysynopsis15');
+                let comediesynopsis16 = document.getElementById('categorysynopsis16');
+                let comediesynopsis17 = document.getElementById('categorysynopsis17');
+                comediesynopsis0.innerText = tableauMangasRU[2].synopsis
+                comediesynopsis1.innerText = tableauMangasRU[3].synopsis
+                comediesynopsis2.innerText = tableauMangasRU[7].synopsis
+                comediesynopsis3.innerText = tableauMangasRU[8].synopsis
+                comediesynopsis4.innerText = tableauMangasRU[10].synopsis
+                comediesynopsis5.innerText = tableauMangasRU[11].synopsis
+                comediesynopsis6.innerText = tableauMangasRU[12].synopsis
+                comediesynopsis7.innerText = tableauMangasRU[13].synopsis
+                comediesynopsis8.innerText = tableauMangasRU[15].synopsis
+                comediesynopsis9.innerText = tableauMangasRU[16].synopsis
+                comediesynopsis10.innerText = tableauMangasRU[18].synopsis
+                comediesynopsis11.innerText = tableauMangasRU[19].synopsis
+                comediesynopsis12.innerText = tableauMangasRU[20].synopsis
+                comediesynopsis13.innerText = tableauMangasRU[22].synopsis
+                comediesynopsis14.innerText = tableauMangasRU[24].synopsis
+                comediesynopsis15.innerText = tableauMangasRU[25].synopsis
+                comediesynopsis16.innerText = tableauMangasRU[26].synopsis
+                comediesynopsis17.innerText = tableauMangasRU[28].synopsis
+                nomcategorie.innerText = categoriesRU[2];
+                break;
+            case 'drama':
+                let dramasynopsis0 = document.getElementById('categorysynopsis0');
+                let dramasynopsis1 = document.getElementById('categorysynopsis1');
+                let dramasynopsis2 = document.getElementById('categorysynopsis2');
+                let dramasynopsis3 = document.getElementById('categorysynopsis3');
+                let dramasynopsis4 = document.getElementById('categorysynopsis4');
+                let dramasynopsis5 = document.getElementById('categorysynopsis5');
+                let dramasynopsis6 = document.getElementById('categorysynopsis6');
+                let dramasynopsis7 = document.getElementById('categorysynopsis7');
+                let dramasynopsis8 = document.getElementById('categorysynopsis8');
+                let dramasynopsis9 = document.getElementById('categorysynopsis9');
+                let dramasynopsis10 = document.getElementById('categorysynopsis10');
+                let dramasynopsis11 = document.getElementById('categorysynopsis11');
+                let dramasynopsis12 = document.getElementById('categorysynopsis12');
+                let dramasynopsis13 = document.getElementById('categorysynopsis13');
+                let dramasynopsis14 = document.getElementById('categorysynopsis14');
+                let dramasynopsis15 = document.getElementById('categorysynopsis15');
+                dramasynopsis0.innerText = tableauMangasRU[1].synopsis;
+                dramasynopsis1.innerText = tableauMangasRU[2].synopsis
+                dramasynopsis2.innerText = tableauMangasRU[4].synopsis
+                dramasynopsis3.innerText = tableauMangasRU[5].synopsis
+                dramasynopsis4.innerText = tableauMangasRU[6].synopsis
+                dramasynopsis5.innerText = tableauMangasRU[9].synopsis
+                dramasynopsis6.innerText = tableauMangasRU[15].synopsis
+                dramasynopsis7.innerText = tableauMangasRU[16].synopsis
+                dramasynopsis8.innerText = tableauMangasRU[18].synopsis
+                dramasynopsis9.innerText = tableauMangasRU[19].synopsis
+                dramasynopsis10.innerText = tableauMangasRU[21].synopsis
+                dramasynopsis11.innerText = tableauMangasRU[22].synopsis
+                dramasynopsis12.innerText = tableauMangasRU[23].synopsis
+                dramasynopsis13.innerText = tableauMangasRU[26].synopsis
+                dramasynopsis14.innerText = tableauMangasRU[28].synopsis
+                dramasynopsis15.innerText = tableauMangasRU[29].synopsis
+                nomcategorie.innerText = categoriesRU[3];
+                break;
+            case 'fantasy':
+                let fantasysynopsis0 = document.getElementById('categorysynopsis0');
+                let fantasysynopsis1 = document.getElementById('categorysynopsis1');
+                let fantasysynopsis2 = document.getElementById('categorysynopsis2');
+                let fantasysynopsis3 = document.getElementById('categorysynopsis3');
+                let fantasysynopsis4 = document.getElementById('categorysynopsis4');
+                let fantasysynopsis5 = document.getElementById('categorysynopsis5');
+                let fantasysynopsis6 = document.getElementById('categorysynopsis6');
+                let fantasysynopsis7 = document.getElementById('categorysynopsis7');
+                let fantasysynopsis8 = document.getElementById('categorysynopsis8');
+                let fantasysynopsis9 = document.getElementById('categorysynopsis9');
+                let fantasysynopsis10 = document.getElementById('categorysynopsis10');
+                let fantasysynopsis11 = document.getElementById('categorysynopsis11');
+                let fantasysynopsis12 = document.getElementById('categorysynopsis12');
+                let fantasysynopsis13 = document.getElementById('categorysynopsis13');
+                let fantasysynopsis14 = document.getElementById('categorysynopsis14');
+                let fantasysynopsis15 = document.getElementById('categorysynopsis15');
+                let fantasysynopsis16 = document.getElementById('categorysynopsis16');
+                fantasysynopsis0.innerText = tableauMangasRU[0].synopsis
+                fantasysynopsis1.innerText = tableauMangasRU[2].synopsis
+                fantasysynopsis2.innerText = tableauMangasRU[3].synopsis
+                fantasysynopsis3.innerText = tableauMangasRU[5].synopsis
+                fantasysynopsis4.innerText = tableauMangasRU[6].synopsis
+                fantasysynopsis5.innerText = tableauMangasRU[10].synopsis
+                fantasysynopsis6.innerText = tableauMangasRU[12].synopsis
+                fantasysynopsis7.innerText = tableauMangasRU[14].synopsis
+                fantasysynopsis8.innerText = tableauMangasRU[15].synopsis
+                fantasysynopsis9.innerText = tableauMangasRU[16].synopsis
+                fantasysynopsis10.innerText = tableauMangasRU[17].synopsis
+                fantasysynopsis11.innerText = tableauMangasRU[18].synopsis
+                fantasysynopsis12.innerText = tableauMangasRU[23].synopsis
+                fantasysynopsis13.innerText = tableauMangasRU[26].synopsis
+                fantasysynopsis14.innerText = tableauMangasRU[27].synopsis
+                fantasysynopsis15.innerText = tableauMangasRU[28].synopsis
+                fantasysynopsis16.innerText = tableauMangasRU[29].synopsis
+                nomcategorie.innerText = categoriesRU[4];
+                break;
+            case 'horreur':
+                let horreursynopsis0 = document.getElementById('categorysynopsis0');
+                horreursynopsis0.innerText = tableauMangasRU[1].synopsis
+                nomcategorie.innerText = categoriesRU[5];
+                break;
+            case 'psychologique':
+                let psychologiquesynopsis0 = document.getElementById('categorysynopsis0');
+                let psychologiquesynopsis1 = document.getElementById('categorysynopsis1');
+                let psychologiquesynopsis2 = document.getElementById('categorysynopsis2');
+                let psychologiquesynopsis3 = document.getElementById('categorysynopsis3');
+                psychologiquesynopsis0.innerText = tableauMangasRU[1].synopsis
+                psychologiquesynopsis1.innerText = tableauMangasRU[21].synopsis
+                psychologiquesynopsis2.innerText = tableauMangasRU[28].synopsis
+                psychologiquesynopsis3.innerText = tableauMangasRU[29].synopsis
+                nomcategorie.innerText = categoriesRU[6];
+                break;
+            case 'science-fiction':
+                let scienceficsynopsis0 = document.getElementById('categorysynopsis0');
+                let scienceficsynopsis1 = document.getElementById('categorysynopsis1');
+                let scienceficsynopsis2 = document.getElementById('categorysynopsis2');
+                scienceficsynopsis0.innerText = tableauMangasRU[7].synopsis
+                scienceficsynopsis1.innerText = tableauMangasRU[10].synopsis
+                scienceficsynopsis2.innerText = tableauMangasRU[26].synopsis
+                nomcategorie.innerText = categoriesRU[7];
+                break;
+            case 'slice_of_life':
+                let sliceoflifesynopsis0 = document.getElementById('categorysynopsis0');
+                let sliceoflifesynopsis1 = document.getElementById('categorysynopsis1');
+                let sliceoflifesynopsis2 = document.getElementById('categorysynopsis2');
+                let sliceoflifesynopsis3 = document.getElementById('categorysynopsis3');
+                let sliceoflifesynopsis4 = document.getElementById('categorysynopsis4');
+                let sliceoflifesynopsis5 = document.getElementById('categorysynopsis5');
+                let sliceoflifesynopsis6 = document.getElementById('categorysynopsis6');
+                sliceoflifesynopsis0.innerText = tableauMangasRU[1].synopsis
+                sliceoflifesynopsis1.innerText = tableauMangasRU[7].synopsis
+                sliceoflifesynopsis2.innerText = tableauMangasRU[8].synopsis
+                sliceoflifesynopsis3.innerText = tableauMangasRU[11].synopsis
+                sliceoflifesynopsis4.innerText = tableauMangasRU[13].synopsis
+                sliceoflifesynopsis5.innerText = tableauMangasRU[20].synopsis
+                sliceoflifesynopsis6.innerText = tableauMangasRU[23].synopsis  
+                nomcategorie.innerText = categoriesRU[8];
+                break;
+            case 'romance':
+                let romancesynopsis0 = document.getElementById('categorysynopsis0');
+                let romancesynopsis1 = document.getElementById('categorysynopsis1');
+                let romancesynopsis2 = document.getElementById('categorysynopsis2');
+                let romancesynopsis3 = document.getElementById('categorysynopsis3');
+                let romancesynopsis4 = document.getElementById('categorysynopsis4');
+                let romancesynopsis5 = document.getElementById('categorysynopsis5');
+                romancesynopsis0.innerText = tableauMangasRU[3].synopsis
+                romancesynopsis1.innerText = tableauMangasRU[7].synopsis
+                romancesynopsis2.innerText = tableauMangasRU[8].synopsis
+                romancesynopsis3.innerText = tableauMangasRU[11].synopsis
+                romancesynopsis4.innerText = tableauMangasRU[13].synopsis
+                romancesynopsis5.innerText = tableauMangasRU[20].synopsis
+                nomcategorie.innerText = categoriesRU[9];
+                break;
+            default:
+                break;
+        }
     }
 }
