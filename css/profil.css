@@ -122,4 +122,53 @@ li:hover {
     width: 100%;
 }
 
+#btnfrLangue {
+    border-radius: 10px;
+    background-color: #4facfe;
+    color: white;
+    font-size: x-large;
+    visibility: hidden;
+}
+
+#btnenLangue {
+    border-radius: 10px;
+    background-color: #4facfe;
+    color: white;
+    font-size: x-large;
+    visibility: hidden;
+}
+#btnruLangue {
+    border-radius: 10px;
+    background-color: #4facfe;
+    color: white;
+    font-size: x-large;
+    visibility: hidden;
+}
+#profilhistorique{
+    background-color: #ffffff;
+    color: #212121;
+    border: 0px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    width: 13%;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 150px;
+    transform: translateX(-50%);
+  }
+  #profilfavoris{
+    background-color: #ffffff;
+    color: #212121;
+    border: 0px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    width: 13%;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 150px;
+    transform: translateX(-50%);
+  }
+
 /* Fin input */

@@ -1,12 +1,18 @@
 const langue = document.getElementById("langue");
-const frLangue = document.getElementById("frLangue");
+const frLangue = document.getElementById("btnfrLangue");
+const enLangue = document.getElementById("btnenLangue");
+const ruLangue = document.getElementById("btnruLangue");
 
 let visible = 0;
 langue.addEventListener("click", () => {
     if(visible%2){
         frLangue.style.visibility = 'hidden';
+        enLangue.style.visibility = 'hidden';
+        ruLangue.style.visibility = 'hidden';
     } else {
         frLangue.style.visibility = 'visible';
+        enLangue.style.visibility = 'visible';
+        ruLangue.style.visibility = 'visible';
     }
     visible++;
 })

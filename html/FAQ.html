@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href="Accueil.html">
+        <a href="accueil.html">
             <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
                 <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
         </a>
@@ -31,41 +31,41 @@
                     <table class="fondcategorietable">
                         <tr>
 
-                            <td class="categorietable"><a href="categorie.html#action">Action</a></td>
+                            <td class="categorietable"><a href="categorie.html#action" id="categorieaction">Action</a></td>
 
 
-                            <td class="categorietable"><a href="categorie.html#aventure">Aventure</a></td>
+                            <td class="categorietable"><a href="categorie.html#aventure" id="categorieaventure">Aventure</a></td>
 
 
-                            <td class="categorietable"><a href="categorie.html#comedie">Comedie</a></td>
+                            <td class="categorietable"><a href="categorie.html#comedie" id="categoriecomedie">Comedie</a></td>
 
 
-                            <td class="categorietable"><a href="categorie.html#drama">Drama</a></td>
-
-                        </tr>
-                        <tr>
-
-                            <td class="categorietable"><a href="categorie.html#fantasy">Fantasy</a></td>
-
-
-                            <td class="categorietable"><a href="categorie.html#horreur">Horreur</a></td>
-
-
-                            <td class="categorietable"><a href="categorie.html#meca">Meca</a></td>
-
-
-                            <td class="categorietable"><a href="categorie.html#psychologique">Psychologique</a></td>
+                            <td class="categorietable"><a href="categorie.html#drama" id="categoriedrama">Drame</a></td>
 
                         </tr>
                         <tr>
 
-                            <td class="categorietable"><a href="categorie.html#science-fiction">Science-Fiction</a></td>
+                            <td class="categorietable"><a href="categorie.html#fantasy" id="categoriefantaisie">Fantasie</a></td>
 
 
-                            <td class="categorietable"><a href="categorie.html#slice_of_life">Slice Of Life</a></td>
+                            <td class="categorietable"><a href="categorie.html#horreur" id="categoriehorreur">Horreur</a></td>
 
 
-                            <td class="categorietable"><a href="categorie.html#romance">Romance</a></td>
+                            <td class="categorietable"><a href="categorie.html#meca" id="categoriemeca">Meca</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#psychologique" id="categoriepsy">Psychologique</a></td>
+
+                        </tr>
+                        <tr>
+
+                            <td class="categorietable"><a href="categorie.html#science-fiction" id="categoriesf">Science-Fiction</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#slice_of_life" id="categoriesofl">Slice Of Life</a></td>
+
+
+                            <td class="categorietable"><a href="categorie.html#romance" id="categorieromance">Romance</a></td>
 
                             <td class="categorietable"><a href="../html/erreur.html">Hentai</a></td>
 
@@ -73,19 +73,19 @@
                     </table>
                 </div>
 
-
+	
                 <button id="buttonnouscontacterbutton1" onclick="openbuttoncontact()">Nous contacter</button>
                 <div class="buttoncontact-overlay" id="buttoncontactOverlay" onclick="closebuttoncontact()"></div>
                 <div class="buttoncontact" id="buttoncontact">
                     <span class="buttoncontact-close" onclick="closebuttoncontact()">&times;</span>
                     <form>
-                        <label for="email">Destinataire :</label>
+                        <label for="email" id="destinataire">Destinataire :</label>
                         <input type="email" id="email" name="email" required><br><br>
-                        <label for="subject">Sujet :</label>
+                        <label for="subject" id="subject">Sujet :</label>
                         <input type="text" id="subject" name="subject" required><br><br>
-                        <label for="message">Message :</label>
+                        <label for="message" id="contactmessage">Message :</label>
                         <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                        <div class="contactmecentre"><input type="submit" class="contactme" value="Envoyer"></div>
+                        <div class="contactmecentre"><button class="contactme" type="submit" id="submitmsgcontact">Envoyez</button></div>
                     </form>
                 </div>
             </div>
@@ -99,26 +99,26 @@
     <main>
         <h1 id="titrefaq">FAQ - Crunchytroll</h1>
   
-  <div class="question" onclick="toggleAnswer(1)">Qu'est-ce que l'anime ?</div>
-  <div class="answer" id="answer-1">L'anime est un terme japonais qui désigne les séries animées ou les films d'animation.</div>
+  <div class="question" id="question1" onclick="toggleAnswer(1)">Qu'est-ce que l'anime ?</div>
+  <div class="answer" id="answer1">L'anime est un terme japonais qui désigne les séries animées ou les films d'animation.</div>
   
-  <div class="question" onclick="toggleAnswer(2)">Comment regarder des anime sur ce site ?</div>
-  <div class="answer" id="answer-2">Sur notre site, vous pouvez regarder des anime en streaming. Il vous suffit de rechercher l'anime que vous souhaitez regarder, puis de cliquer sur le lien de l'épisode ou du film pour le visionner en ligne.</div>
+  <div class="question" id="question2" onclick="toggleAnswer(2)">Comment regarder des anime sur ce site ?</div>
+  <div class="answer" id="answer2">Sur notre site, vous pouvez regarder des anime en streaming. Il vous suffit de rechercher l'anime que vous souhaitez regarder, puis de cliquer sur le lien de l'épisode ou du film pour le visionner en ligne.</div>
   
-  <div class="question" onclick="toggleAnswer(3)">Les vidéos sont-elles disponibles en haute qualité ?</div>
-  <div class="answer" id="answer-3">Oui, nous proposons des vidéos d'anime en haute qualité. La plupart de nos vidéos sont disponibles en résolution HD pour une meilleure expérience de visionnage.</div>
+  <div class="question" id="question3" onclick="toggleAnswer(3)">Les vidéos sont-elles disponibles en haute qualité ?</div>
+  <div class="answer" id="answer3">Oui, nous proposons des vidéos d'anime en haute qualité. La plupart de nos vidéos sont disponibles en résolution HD pour une meilleure expérience de visionnage.</div>
   
-  <div class="question" onclick="toggleAnswer(4)">Est-ce que le contenu est sous-titré ou doublé en français ?</div>
-  <div class="answer" id="answer-4">Nous proposons à la fois des animes sous-titrés et doublés en français. Vous pouvez choisir la version qui vous convient le mieux.</div>
+  <div class="question" id="question4" onclick="toggleAnswer(4)">Est-ce que le contenu est sous-titré ou doublé en français ?</div>
+  <div class="answer" id="answer4">Nous proposons à la fois des animes sous-titrés et doublés en français. Vous pouvez choisir la version qui vous convient le mieux.</div>
   
-  <div class="question" onclick="toggleAnswer(5)">Comment contacter le support en cas de problème ?</div>
-  <div class="answer" id="answer-5">Si vous rencontrez un problème ou avez des questions, vous pouvez nous contacter en utilisant le formulaire de contact disponible sur notre site. Nous nous efforcerons de vous répondre dans les plus brefs délais.</div><br><br>
+  <div class="question" id="question5" onclick="toggleAnswer(5)">Comment contacter le support en cas de problème ?</div>
+  <div class="answer" id="answer5">Si vous rencontrez un problème ou avez des questions, vous pouvez nous contacter en utilisant le formulaire de contact disponible sur notre site. Nous nous efforcerons de vous répondre dans les plus brefs délais.</div><br><br>
     </main>
     <footer id="logofig">
-        <figure >
-            <a href="Accueil.html">
-            <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
-            <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
+        <figure>
+            <a href="accueil.html">
+                <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
+                <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
         </figure>
         <div id="iconeresaux">
             <div id="logoresaux">
@@ -132,7 +132,7 @@
             </div>
             <div id="footerflexbox">
                 <a href="FAQ.html"><button id="buttonfaq">FAQ</button></a>
-                <a href="Mention légal.html"><button id="buttonmentionlegale">Mention légale</button></a>
+                <a href="Mentionlegal.html"><button id="buttonmentionlegale">Mention légale</button></a>
             </div>
         </div>
     </footer>
@@ -142,10 +142,11 @@
     <script src="../js/buttoncontact.js"></script>
     <script>
         function toggleAnswer(index) {
-          var answer = document.getElementById('answer-' + index);
+          var answer = document.getElementById('answer' + index);
           answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
         }
       </script>
       <script src="../js/connexion.js"></script>
+      <script src="../js/traduction.js"></script>
 </body>
 </html>    

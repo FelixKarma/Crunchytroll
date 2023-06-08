@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <a href="Accueil.html">
+    <a href="accueil.html">
         <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
             <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
     </a>
@@ -33,41 +33,41 @@
                 <table class="fondcategorietable">
                     <tr>
 
-                        <td class="categorietable"><a href="categorie.html#action">Action</a></td>
+                        <td class="categorietable"><a href="categorie.html#action" id="categorieaction">Action</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#aventure">Aventure</a></td>
+                        <td class="categorietable"><a href="categorie.html#aventure" id="categorieaventure">Aventure</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#comedie">Comedie</a></td>
+                        <td class="categorietable"><a href="categorie.html#comedie" id="categoriecomedie">Comedie</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#drama">Drama</a></td>
-
-                    </tr>
-                    <tr>
-
-                        <td class="categorietable"><a href="categorie.html#fantasy">Fantasy</a></td>
-
-
-                        <td class="categorietable"><a href="categorie.html#horreur">Horreur</a></td>
-
-
-                        <td class="categorietable"><a href="categorie.html#meca">Meca</a></td>
-
-
-                        <td class="categorietable"><a href="categorie.html#psychologique">Psychologique</a></td>
+                        <td class="categorietable"><a href="categorie.html#drama" id="categoriedrama">Drame</a></td>
 
                     </tr>
                     <tr>
 
-                        <td class="categorietable"><a href="categorie.html#science-fiction">Science-Fiction</a></td>
+                        <td class="categorietable"><a href="categorie.html#fantasy" id="categoriefantaisie">Fantasie</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#slice_of_life">Slice Of Life</a></td>
+                        <td class="categorietable"><a href="categorie.html#horreur" id="categoriehorreur">Horreur</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#romance">Romance</a></td>
+                        <td class="categorietable"><a href="categorie.html#meca" id="categoriemeca">Meca</a></td>
+
+
+                        <td class="categorietable"><a href="categorie.html#psychologique" id="categoriepsy">Psychologique</a></td>
+
+                    </tr>
+                    <tr>
+
+                        <td class="categorietable"><a href="categorie.html#science-fiction" id="categoriesf">Science-Fiction</a></td>
+
+
+                        <td class="categorietable"><a href="categorie.html#slice_of_life" id="categoriesofl">Slice Of Life</a></td>
+
+
+                        <td class="categorietable"><a href="categorie.html#romance" id="categorieromance">Romance</a></td>
 
                         <td class="categorietable"><a href="../html/erreur.html">Hentai</a></td>
 
@@ -81,13 +81,13 @@
             <div class="buttoncontact" id="buttoncontact">
                 <span class="buttoncontact-close" onclick="closebuttoncontact()">&times;</span>
                 <form>
-                    <label for="email">Destinataire :</label>
+                    <label for="email" id="destinataire">Destinataire :</label>
                     <input type="email" id="email" name="email" required><br><br>
-                    <label for="subject">Sujet :</label>
+                    <label for="subject" id="subject">Sujet :</label>
                     <input type="text" id="subject" name="subject" required><br><br>
-                    <label for="message">Message :</label>
+                    <label for="message" id="contactmessage">Message :</label>
                     <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                    <div class="contactmecentre"><input type="submit" class="contactme" value="Envoyer"></div>
+                    <div class="contactmecentre"><button class="contactme" type="submit" id="submitmsgcontact">Envoyez</button></div>
                 </form>
             </div>
         </div>
@@ -105,11 +105,11 @@
         <input id="username" type="text" placeholder="Nom d'utilisateur" required>
         <input id="password" type="password" placeholder="Mot de passe" required>
         <button id="seco" type="submit">Se connecter</button>
+        <p id="messagealert"></p>
       </form>
       <button id="mdpoublie">Mot de passe oublié</button>
-      <p id="messagealert"></p>
       <form id="formulairemdpoublie">
-        <h2 id="connexion">Mot de passe oublié</h2>
+        <h2 id="forgotpasswordtitle">Mot de passe oublié</h2>
         <label id="labelmail" for="recupmail">Email</label>
         <input type="email" id="recupmail" placeholder="Email" required>
         <button id="recupmdp" type="submit">Récupérer mot de passe</button>
@@ -119,31 +119,32 @@
   </main>
   <footer id="logofig">
     <figure>
-      <a href="Accueil.html">
-        <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
-        <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
+        <a href="accueil.html">
+            <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
+            <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
     </figure>
     <div id="iconeresaux">
-      <div id="logoresaux">
-        <figure>
-          <a href="404.html">
-            <img src="../img/feFacebook0.png" alt="logofacebook" id="facebook">
-            <img src="../img/Vector.png" alt="loginsta" id="insta">
-          </a>
+        <div id="logoresaux">
+            <figure>
+                <a href="404.html">
+                    <img src="../img/feFacebook0.png" alt="logofacebook" id="facebook">
+                    <img src="../img/Vector.png" alt="loginsta" id="insta">
+                </a>
 
-        </figure>
-      </div>
-      <div id="footerflexbox">
-        <a href="FAQ.html"><button id="buttonfaq">FAQ</button></a>
-        <a href="Mention légal.html"><button id="buttonmentionlegale">Mention légale</button></a>
-      </div>
+            </figure>
+        </div>
+        <div id="footerflexbox">
+            <a href="FAQ.html"><button id="buttonfaq">FAQ</button></a>
+            <a href="Mentionlegal.html"><button id="buttonmentionlegale">Mention légale</button></a>
+        </div>
     </div>
-  </footer>
+</footer>
   <script src="../js/barrerecherche.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/buttoncategorie.js"></script>
   <script src="../js/buttoncontact.js"></script>
   <script src="../js/connexion.js"></script>
+  <script src="../js/traduction.js"></script>
 </body>
 
 </html>

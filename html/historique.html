@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/favoris.css">
+  <link rel="stylesheet" href="../css/historique.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/header-footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <a href="Accueil.html">
+    <a href="accueil.html">
         <figure id="logofig"><img src="../img/crunchytroll-logo.png" alt="logo" id="logo1a">
             <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo1b">
     </a>
@@ -33,41 +33,41 @@
                 <table class="fondcategorietable">
                     <tr>
 
-                        <td class="categorietable"><a href="categorie.html#action">Action</a></td>
+                        <td class="categorietable"><a href="categorie.html#action" id="categorieaction">Action</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#aventure">Aventure</a></td>
+                        <td class="categorietable"><a href="categorie.html#aventure" id="categorieaventure">Aventure</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#comedie">Comedie</a></td>
+                        <td class="categorietable"><a href="categorie.html#comedie" id="categoriecomedie">Comedie</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#drama">Drama</a></td>
-
-                    </tr>
-                    <tr>
-
-                        <td class="categorietable"><a href="categorie.html#fantasy">Fantasy</a></td>
-
-
-                        <td class="categorietable"><a href="categorie.html#horreur">Horreur</a></td>
-
-
-                        <td class="categorietable"><a href="categorie.html#meca">Meca</a></td>
-
-
-                        <td class="categorietable"><a href="categorie.html#psychologique">Psychologique</a></td>
+                        <td class="categorietable"><a href="categorie.html#drama" id="categoriedrama">Drame</a></td>
 
                     </tr>
                     <tr>
 
-                        <td class="categorietable"><a href="categorie.html#science-fiction">Science-Fiction</a></td>
+                        <td class="categorietable"><a href="categorie.html#fantasy" id="categoriefantaisie">Fantasie</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#slice_of_life">Slice Of Life</a></td>
+                        <td class="categorietable"><a href="categorie.html#horreur" id="categoriehorreur">Horreur</a></td>
 
 
-                        <td class="categorietable"><a href="categorie.html#romance">Romance</a></td>
+                        <td class="categorietable"><a href="categorie.html#meca" id="categoriemeca">Meca</a></td>
+
+
+                        <td class="categorietable"><a href="categorie.html#psychologique" id="categoriepsy">Psychologique</a></td>
+
+                    </tr>
+                    <tr>
+
+                        <td class="categorietable"><a href="categorie.html#science-fiction" id="categoriesf">Science-Fiction</a></td>
+
+
+                        <td class="categorietable"><a href="categorie.html#slice_of_life" id="categoriesofl">Slice Of Life</a></td>
+
+
+                        <td class="categorietable"><a href="categorie.html#romance" id="categorieromance">Romance</a></td>
 
                         <td class="categorietable"><a href="../html/erreur.html">Hentai</a></td>
 
@@ -81,13 +81,13 @@
             <div class="buttoncontact" id="buttoncontact">
                 <span class="buttoncontact-close" onclick="closebuttoncontact()">&times;</span>
                 <form>
-                    <label for="email">Destinataire :</label>
+                    <label for="email" id="destinataire">Destinataire :</label>
                     <input type="email" id="email" name="email" required><br><br>
-                    <label for="subject">Sujet :</label>
+                    <label for="subject" id="subject">Sujet :</label>
                     <input type="text" id="subject" name="subject" required><br><br>
-                    <label for="message">Message :</label>
+                    <label for="message" id="contactmessage">Message :</label>
                     <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                    <div class="contactmecentre"><input type="submit" class="contactme" value="Envoyer"></div>
+                    <div class="contactmecentre"><button class="contactme" type="submit" id="submitmsgcontact">Envoyez</button></div>
                 </form>
             </div>
         </div>
@@ -100,42 +100,42 @@
 </header>
   <main>
     <div class="center">
-      <h1 id="nomcategorie">Votre Historique</h1>
+      <h1 id="historytitle">Votre Historique</h1>
   </div>
   <div class="contenu">
     <div class="boxcategorie">
       <img src="../img/afficheManga/demonslayer.png" class="imagemangacategorie">
       <a href="manga.html#demon_slayer" class="atitre"><p class="titremangacategorie">Demon Slayer</p></a>
     </div>
-    <p class="synopsismangacategorie">Le Japon, au début du XXe siecle. Un petit marchand de charbon nommé Tanjiro vit une vie sans histoire dans les montagnes. Jusqu’au jour tragique où, après une courte absence, il retrouve son village et sa famille massacrés par un ogre ! La seule survivante de cette tragédie est sa jeune sœur Nezuko. Hélas, au contact de la bête, celle-ci s’est à son tour métamorphosée en monstre...Afin de renverser le processus et de venger sa famille, Tanjiro décide de partir en quête de vérité. Pour le jeune héros et sa sœur, c’est une longue aventure de sang et d’acier qui commence !</p>
+    <p class="synopsismangacategorie" id="historysynopsis1">Le Japon, au début du XXe siecle. Un petit marchand de charbon nommé Tanjiro vit une vie sans histoire dans les montagnes. Jusqu’au jour tragique où, après une courte absence, il retrouve son village et sa famille massacrés par un ogre ! La seule survivante de cette tragédie est sa jeune sœur Nezuko. Hélas, au contact de la bête, celle-ci s’est à son tour métamorphosée en monstre...Afin de renverser le processus et de venger sa famille, Tanjiro décide de partir en quête de vérité. Pour le jeune héros et sa sœur, c’est une longue aventure de sang et d’acier qui commence !</p>
   </div>
   <div class="contenu">
     <div class="boxcategorie">
       <img src="../img/afficheManga/vinlandsaga.png" class="imagemangacategorie">
       <a href="manga.html#vinland_saga" class="atitre"><p class="titremangacategorie">Vinland Saga</p></a>
     </div>
-    <p class="synopsismangacategorie">Depuis qu'Askeladd, un chef de guerre fourbe et sans honneur, a tué son père lorsqu'il était enfant, Thorfinn le suit partout dans le but de se venger. Mais bien qu'il soit devenu un guerrier redoutable, il ne parvient toujours pas à vaincre son ennemi. Au fil des ans, enchaînant missions périlleuses et combats afin d'obtenir des duels contre l'homme qu'il hait plus que tout, le gentil Thorfinn est devenu froid et solitaire, prisonnier de son passé et incapable d'aller de l'avant. Jusqu'à ce que la vie le force à regarder le monde différemment…</p>
+    <p class="synopsismangacategorie" id="historysynopsis2">Depuis qu'Askeladd, un chef de guerre fourbe et sans honneur, a tué son père lorsqu'il était enfant, Thorfinn le suit partout dans le but de se venger. Mais bien qu'il soit devenu un guerrier redoutable, il ne parvient toujours pas à vaincre son ennemi. Au fil des ans, enchaînant missions périlleuses et combats afin d'obtenir des duels contre l'homme qu'il hait plus que tout, le gentil Thorfinn est devenu froid et solitaire, prisonnier de son passé et incapable d'aller de l'avant. Jusqu'à ce que la vie le force à regarder le monde différemment…</p>
   </div>
   <div class="contenu">
     <div class="boxcategorie">
       <img src="../img/afficheManga/oshinoko.png" class="imagemangacategorie">
       <a href="manga.html#oshi_no_ko" class="atitre"><p class="titremangacategorie">Oshi no Ko</p></a>
     </div>
-    <p class="synopsismangacategorie">Le docteur Gorô est obstétricien dans un hôpital de campagne. Il est loin du monde de paillettes dans lequel évolue Ai Hoshino, une chanteuse au succès grandissant dont il est “un fan absolu”. Ces deux-là vont peut-être se rencontrer dans des circonstances peu favorables, mais cet évènement changera leur vie à jamais !</p>
+    <p class="synopsismangacategorie" id="historysynopsis3">Le docteur Gorô est obstétricien dans un hôpital de campagne. Il est loin du monde de paillettes dans lequel évolue Ai Hoshino, une chanteuse au succès grandissant dont il est “un fan absolu”. Ces deux-là vont peut-être se rencontrer dans des circonstances peu favorables, mais cet évènement changera leur vie à jamais !</p>
   </div>
   <div class="contenu">
     <div class="boxcategorie">
       <img src="../img/afficheManga/Onepiece.png" class="imagemangacategorie">
       <a href="manga.html#one_piece" class="atitre"><p class="titremangacategorie">One Piece</p></a>
     </div>
-    <p class="synopsismangacategorie">Tout le monde a peur des pirates sauf Luffy, qui rêve d’en devenir un ! L’adolescent imprévisible voit même les choses en grand : il veut devenir le plus fort de tous, le seigneur des pirates. Pour y arriver, il lui doit trouver un trésor légendaire, le One Piece. Mais si ce n’était qu’une légende ?</p>
+    <p class="synopsismangacategorie" id="historysynopsis4">Tout le monde a peur des pirates sauf Luffy, qui rêve d’en devenir un ! L’adolescent imprévisible voit même les choses en grand : il veut devenir le plus fort de tous, le seigneur des pirates. Pour y arriver, il lui doit trouver un trésor légendaire, le One Piece. Mais si ce n’était qu’une légende ?</p>
   </div>
   <div class="contenu">
     <div class="boxcategorie">
       <img src="../img/afficheManga/Dungeon Meshi.png" class="imagemangacategorie">
       <a href="manga.html#dungeon_meshi" class="atitre"><p class="titremangacategorie">Dungeon Meshi</p></a>
     </div>
-    <p class="synopsismangacategorie">L'histoire, rocambolesque, commence alors qu'un groupe de six aventuriers affronte un dragon dans un donjon. Le combat tournant à la déroute, Farin (magicienne humaine) utilise un sort pour sauver le reste de l'équipe alors qu'elle se fait avaler par le Dragon. Laios (son frère, chevalier) décide avec trois autres membres de l'équipe de retourner au plus vite dans le donjon pour sortir Farin de l'estomac du dragon. Malheureusement ils se retrouvent sans provision, et décident de se nourrir de ce qu'ils trouveront au fur et à mesure de leur descente dans le donjon. Ils vont faire la rencontre de Senshi, un nain qui vit en autarcie et leur apprendra à chaque chapitre comment cuisiner tel ou tel monstre.</p>
+    <p class="synopsismangacategorie" id="historysynopsis5">L'histoire, rocambolesque, commence alors qu'un groupe de six aventuriers affronte un dragon dans un donjon. Le combat tournant à la déroute, Farin (magicienne humaine) utilise un sort pour sauver le reste de l'équipe alors qu'elle se fait avaler par le Dragon. Laios (son frère, chevalier) décide avec trois autres membres de l'équipe de retourner au plus vite dans le donjon pour sortir Farin de l'estomac du dragon. Malheureusement ils se retrouvent sans provision, et décident de se nourrir de ce qu'ils trouveront au fur et à mesure de leur descente dans le donjon. Ils vont faire la rencontre de Senshi, un nain qui vit en autarcie et leur apprendra à chaque chapitre comment cuisiner tel ou tel monstre.</p>
   </div>
 
 
@@ -143,31 +143,32 @@
   </main>
   <footer id="logofig">
     <figure>
-      <a href="Accueil.html">
-        <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
-        <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
+        <a href="accueil.html">
+            <img src="../img/crunchytroll-logo.png" alt="logo" id="logo2a">
+            <img src="../img/crunchyroll-ecrit.png" alt="logo écrit" id="logo2b"></a>
     </figure>
     <div id="iconeresaux">
-      <div id="logoresaux">
-        <figure>
-          <a href="404.html">
-            <img src="../img/feFacebook0.png" alt="logofacebook" id="facebook">
-            <img src="../img/Vector.png" alt="loginsta" id="insta">
-          </a>
+        <div id="logoresaux">
+            <figure>
+                <a href="404.html">
+                    <img src="../img/feFacebook0.png" alt="logofacebook" id="facebook">
+                    <img src="../img/Vector.png" alt="loginsta" id="insta">
+                </a>
 
-        </figure>
-      </div>
-      <div id="footerflexbox">
-        <a href="FAQ.html"><button id="buttonfaq">FAQ</button></a>
-        <a href="Mention légal.html"><button id="buttonmentionlegale">Mention légale</button></a>
-      </div>
+            </figure>
+        </div>
+        <div id="footerflexbox">
+            <a href="FAQ.html"><button id="buttonfaq">FAQ</button></a>
+            <a href="Mentionlegal.html"><button id="buttonmentionlegale">Mention légale</button></a>
+        </div>
     </div>
-  </footer>
+</footer>
   <script src="../js/barrerecherche.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/buttoncategorie.js"></script>
   <script src="../js/buttoncontact.js"></script>
   <script src="../js/connexion.js"></script>
+  <script src="../js/traduction.js"></script>
 </body>
 
 </html>
